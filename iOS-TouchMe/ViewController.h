@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Circle.h"
 
 @interface ViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIView *blackBox;
+@property (strong, nonatomic) Circle* circle;
 @end

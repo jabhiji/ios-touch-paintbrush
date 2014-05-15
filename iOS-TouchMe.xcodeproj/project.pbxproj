@@ -21,6 +21,8 @@
 		1E24110019251ADB00BEECFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2410E219251ADB00BEECFC /* UIKit.framework */; };
 		1E24110819251ADB00BEECFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E24110619251ADB00BEECFC /* InfoPlist.strings */; };
 		1E24110A19251ADB00BEECFC /* iOS_TouchMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E24110919251ADB00BEECFC /* iOS_TouchMeTests.m */; };
+		1E24111419251B0700BEECFC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24111319251B0700BEECFC /* background.png */; };
+		1E24111719251F5000BEECFC /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E24111619251F5000BEECFC /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		1E24110519251ADB00BEECFC /* iOS-TouchMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-TouchMeTests-Info.plist"; sourceTree = "<group>"; };
 		1E24110719251ADB00BEECFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E24110919251ADB00BEECFC /* iOS_TouchMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_TouchMeTests.m; sourceTree = "<group>"; };
+		1E24111319251B0700BEECFC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1E24111519251F5000BEECFC /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		1E24111619251F5000BEECFC /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +120,12 @@
 				1E2410ED19251ADB00BEECFC /* AppDelegate.h */,
 				1E2410EE19251ADB00BEECFC /* AppDelegate.m */,
 				1E2410F019251ADB00BEECFC /* Main.storyboard */,
+				1E24111519251F5000BEECFC /* Circle.h */,
+				1E24111619251F5000BEECFC /* Circle.m */,
 				1E2410F319251ADB00BEECFC /* ViewController.h */,
 				1E2410F419251ADB00BEECFC /* ViewController.m */,
 				1E2410F619251ADB00BEECFC /* Images.xcassets */,
+				1E24111319251B0700BEECFC /* background.png */,
 				1E2410E519251ADB00BEECFC /* Supporting Files */,
 			);
 			path = "iOS-TouchMe";
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2410F719251ADB00BEECFC /* Images.xcassets in Resources */,
+				1E24111419251B0700BEECFC /* background.png in Resources */,
 				1E2410E919251ADB00BEECFC /* InfoPlist.strings in Resources */,
 				1E2410F219251ADB00BEECFC /* Main.storyboard in Resources */,
 			);
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2410F519251ADB00BEECFC /* ViewController.m in Sources */,
+				1E24111719251F5000BEECFC /* Circle.m in Sources */,
 				1E2410EF19251ADB00BEECFC /* AppDelegate.m in Sources */,
 				1E2410EB19251ADB00BEECFC /* main.m in Sources */,
 			);
