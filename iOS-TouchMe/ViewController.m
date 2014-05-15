@@ -72,7 +72,11 @@ int i;
 }
 
 - (IBAction)clearScreen:(id)sender {
+    for (int kount=0; kount<i; kount++) {
+        [circleArray[kount] removeFromSuperview];
+    }
     [circleArray removeAllObjects];
+    circleArray = nil;
     circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
     i = 0;
 }
