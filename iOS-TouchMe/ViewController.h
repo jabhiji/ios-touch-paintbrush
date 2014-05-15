@@ -10,7 +10,17 @@
 #import "Circle.h"
 
 @interface ViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIView *blackBox;
 @property (strong, nonatomic) NSMutableArray* circleArray;
+@property int i;
+@property UIColor* currentColor;
+
+- (IBAction)redColor:(id)sender;
+- (IBAction)blueColor:(id)sender;
+- (IBAction)yellowColor:(id)sender;
+- (IBAction)greenColor:(id)sender;
+- (IBAction)whiteColor:(id)sender;
 - (IBAction)clearScreen:(id)sender;
+
 @end

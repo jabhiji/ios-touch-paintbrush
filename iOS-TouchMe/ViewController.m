@@ -16,8 +16,8 @@
 
 @synthesize blackBox;
 @synthesize circleArray;
-
-int i;
+@synthesize i;
+@synthesize currentColor;
 
 - (void)viewDidLoad
 {
@@ -26,6 +26,7 @@ int i;
     blackBox.clipsToBounds = YES;
     circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
     i = 0;
+    currentColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +56,7 @@ int i;
         CGRect circleFrame = CGRectMake(x-R, y-R, 2*R, 2*R);
         Circle* circle = [[Circle alloc] initWithFrame:circleFrame];
         [circle setBackgroundColor:[UIColor clearColor]];
-        circle.circleColor = [UIColor yellowColor];
+        circle.circleColor = currentColor;
         [circleArray addObject:circle];
         [blackBox addSubview:circleArray[i]];
         i++;
@@ -80,5 +81,26 @@ int i;
     circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
     i = 0;
 }
+
+- (IBAction)redColor:(id)sender {
+    currentColor = [UIColor redColor];
+}
+
+- (IBAction)blueColor:(id)sender {
+    currentColor = [UIColor blueColor];
+}
+
+- (IBAction)yellowColor:(id)sender {
+    currentColor = [UIColor yellowColor];
+}
+
+- (IBAction)greenColor:(id)sender {
+    currentColor = [UIColor greenColor];
+}
+
+- (IBAction)whiteColor:(id)sender {
+    currentColor = [UIColor whiteColor];
+}
+
 
 @end
