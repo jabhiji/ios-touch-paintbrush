@@ -11,5 +11,6 @@
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *blackBox;
-@property (strong, nonatomic) Circle* circle;
+@property (strong, nonatomic) NSMutableArray* circleArray;
+- (IBAction)clearScreen:(id)sender;
 @end

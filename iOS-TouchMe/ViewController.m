@@ -15,13 +15,17 @@
 @implementation ViewController
 
 @synthesize blackBox;
-@synthesize circle;
+@synthesize circleArray;
+
+int i;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     blackBox.clipsToBounds = YES;
+    circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
+    i = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,16 +39,7 @@
     for (UITouch* t in touches) {
         CGPoint touchLocation;
         touchLocation = [t locationInView:blackBox];
-        NSLog(@"touchedBegan at %f %f", touchLocation.x, touchLocation.y);
-
-        float x = touchLocation.x;
-        float y = touchLocation.y;
-        float R = 10.0;
-        CGRect circleFrame = CGRectMake(x-R, y-R, 2*R, 2*R);
-        circle = [[Circle alloc] initWithFrame:circleFrame];
-        [circle setBackgroundColor:[UIColor clearColor]];
-        circle.circleColor = [UIColor blueColor];
-        [blackBox addSubview:circle];
+        //NSLog(@"touchedBegan at %f %f", touchLocation.x, touchLocation.y);
     }
 }
 
@@ -53,15 +48,17 @@
     for (UITouch* t in touches) {
         CGPoint touchLocation;
         touchLocation = [t locationInView:blackBox];
-        NSLog(@"touchesMoved at %f %f", touchLocation.x, touchLocation.y);
+        //NSLog(@"touchesMoved at %f %f", touchLocation.x, touchLocation.y);
         float x = touchLocation.x;
         float y = touchLocation.y;
         float R = 10.0;
         CGRect circleFrame = CGRectMake(x-R, y-R, 2*R, 2*R);
-        circle = [[Circle alloc] initWithFrame:circleFrame];
+        Circle* circle = [[Circle alloc] initWithFrame:circleFrame];
         [circle setBackgroundColor:[UIColor clearColor]];
         circle.circleColor = [UIColor yellowColor];
-        [blackBox addSubview:circle];
+        [circleArray addObject:circle];
+        [blackBox addSubview:circleArray[i]];
+        i++;
     }
 }
 
@@ -70,16 +67,14 @@
     for (UITouch* t in touches) {
         CGPoint touchLocation;
         touchLocation = [t locationInView:blackBox];
-        NSLog(@"touchesEnded at %f %f", touchLocation.x, touchLocation.y);
-        float x = touchLocation.x;
-        float y = touchLocation.y;
-        float R = 10.0;
-        CGRect circleFrame = CGRectMake(x-R, y-R, 2*R, 2*R);
-        circle = [[Circle alloc] initWithFrame:circleFrame];
-        [circle setBackgroundColor:[UIColor clearColor]];
-        circle.circleColor = [UIColor whiteColor];
-        [blackBox addSubview:circle];
+        //NSLog(@"touchesEnded at %f %f", touchLocation.x, touchLocation.y);
     }
+}
+
+- (IBAction)clearScreen:(id)sender {
+    [circleArray removeAllObjects];
+    circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
+    i = 0;
 }
 
 @end
