@@ -60,6 +60,7 @@
         [circleArray addObject:circle];
         [blackBox addSubview:circleArray[i]];
         i++;
+        NSLog(@"i = %d",i);
     }
 }
 

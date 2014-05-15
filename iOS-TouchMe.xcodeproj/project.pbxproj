@@ -23,6 +23,11 @@
 		1E24110A19251ADB00BEECFC /* iOS_TouchMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E24110919251ADB00BEECFC /* iOS_TouchMeTests.m */; };
 		1E24111419251B0700BEECFC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24111319251B0700BEECFC /* background.png */; };
 		1E24111719251F5000BEECFC /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E24111619251F5000BEECFC /* Circle.m */; };
+		1E24112819255D6C00BEECFC /* whiteColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24112319255D6C00BEECFC /* whiteColor.png */; };
+		1E24112919255D6C00BEECFC /* blueColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24112419255D6C00BEECFC /* blueColor.png */; };
+		1E24112A19255D6C00BEECFC /* greenColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24112519255D6C00BEECFC /* greenColor.png */; };
+		1E24112B19255D6C00BEECFC /* redColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24112619255D6C00BEECFC /* redColor.png */; };
+		1E24112C19255D6C00BEECFC /* yellowColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24112719255D6C00BEECFC /* yellowColor.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		1E24111319251B0700BEECFC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		1E24111519251F5000BEECFC /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		1E24111619251F5000BEECFC /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		1E24112319255D6C00BEECFC /* whiteColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteColor.png; sourceTree = "<group>"; };
+		1E24112419255D6C00BEECFC /* blueColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueColor.png; sourceTree = "<group>"; };
+		1E24112519255D6C00BEECFC /* greenColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenColor.png; sourceTree = "<group>"; };
+		1E24112619255D6C00BEECFC /* redColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redColor.png; sourceTree = "<group>"; };
+		1E24112719255D6C00BEECFC /* yellowColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowColor.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,11 @@
 		1E2410D219251ADB00BEECFC = {
 			isa = PBXGroup;
 			children = (
+				1E24112319255D6C00BEECFC /* whiteColor.png */,
+				1E24112419255D6C00BEECFC /* blueColor.png */,
+				1E24112519255D6C00BEECFC /* greenColor.png */,
+				1E24112619255D6C00BEECFC /* redColor.png */,
+				1E24112719255D6C00BEECFC /* yellowColor.png */,
 				1E2410E419251ADB00BEECFC /* iOS-TouchMe */,
 				1E24110319251ADB00BEECFC /* iOS-TouchMeTests */,
 				1E2410DD19251ADB00BEECFC /* Frameworks */,
@@ -237,8 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2410F719251ADB00BEECFC /* Images.xcassets in Resources */,
+				1E24112B19255D6C00BEECFC /* redColor.png in Resources */,
+				1E24112919255D6C00BEECFC /* blueColor.png in Resources */,
+				1E24112A19255D6C00BEECFC /* greenColor.png in Resources */,
 				1E24111419251B0700BEECFC /* background.png in Resources */,
+				1E24112819255D6C00BEECFC /* whiteColor.png in Resources */,
 				1E2410E919251ADB00BEECFC /* InfoPlist.strings in Resources */,
+				1E24112C19255D6C00BEECFC /* yellowColor.png in Resources */,
 				1E2410F219251ADB00BEECFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +486,7 @@
 				1E24110F19251ADB00BEECFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E24111019251ADB00BEECFC /* Build configuration list for PBXNativeTarget "iOS-TouchMeTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +495,7 @@
 				1E24111219251ADB00BEECFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
