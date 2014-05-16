@@ -22,5 +22,6 @@
 - (IBAction)greenColor:(id)sender;
 - (IBAction)whiteColor:(id)sender;
 - (IBAction)clearScreen:(id)sender;
+- (IBAction)blackColor:(id)sender;
 
 @end

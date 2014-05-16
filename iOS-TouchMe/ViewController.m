@@ -41,6 +41,17 @@
         CGPoint touchLocation;
         touchLocation = [t locationInView:blackBox];
         //NSLog(@"touchedBegan at %f %f", touchLocation.x, touchLocation.y);
+        float x = touchLocation.x;
+        float y = touchLocation.y;
+        float R = 10.0;
+        CGRect circleFrame = CGRectMake(x-R, y-R, 2*R, 2*R);
+        Circle* circle = [[Circle alloc] initWithFrame:circleFrame];
+        [circle setBackgroundColor:[UIColor clearColor]];
+        circle.circleColor = currentColor;
+        [circleArray addObject:circle];
+        [blackBox addSubview:circleArray[i]];
+        i++;
+        NSLog(@"i = %d",i);
     }
 }
 
@@ -81,6 +92,11 @@
     circleArray = nil;
     circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
     i = 0;
+    currentColor = [UIColor whiteColor];
+}
+
+- (IBAction)blackColor:(id)sender {
+    currentColor = [UIColor blackColor];
 }
 
 - (IBAction)redColor:(id)sender {
