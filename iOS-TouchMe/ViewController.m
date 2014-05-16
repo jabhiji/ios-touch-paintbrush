@@ -24,7 +24,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     blackBox.clipsToBounds = YES;
-    circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
+    circleArray = [[NSMutableArray alloc] initWithCapacity:2000];
     i = 0;
     currentColor = [UIColor whiteColor];
 }
